@@ -10,7 +10,7 @@ export default function Home() {
   const handleCloseMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <div id="main">
+    <main>
       <div className="container mx-auto">
         <div className="flex items-center justify-between py-6 lg:py-10">
           <Link href="/" className="flex items-center">
@@ -412,6 +412,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
