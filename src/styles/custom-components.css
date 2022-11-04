@@ -1,13 +1,13 @@
 
 .container {
-  max-width: 700px;
+  max-width: 650px;
 
   @screen sm {
-    max-width: 800px;
+    max-width: 750px;
   }
 
   @screen md {
-    max-width: 950px;
+    max-width: 900px;
   }
 }
 
@@ -25,4 +25,40 @@
   & &-btn {
     @apply mt-8 mb-0 inline-block border border-blue-dark px-5 py-2 font-body font-semibold text-blue-dark no-underline transition-colors hover:bg-primary hover:text-white sm:mb-4;
   }
+}
+
+.category-elementary-school {
+  @apply text-green-600 bg-green-300
+}
+
+.category-high-school {
+  @apply text-yellow-600 bg-yellow-300
+}
+
+.category-university {
+  @apply text-red-600 bg-red-300
+}
+
+.category-networking {
+  @apply text-blue-600 bg-blue-300
+}
+
+.category-engineering {
+  @apply text-white bg-black
+}
+
+.category-noc {
+  @apply text-blue-200 bg-blue-600
+}
+
+.category-developer {
+  @apply text-emerald-600 bg-emerald-300
+}
+
+.category-front-end {
+  @apply text-teal-600 bg-teal-300
+}
+
+.category-fullstack {
+  @apply text-indigo-600 bg-indigo-300
 }
