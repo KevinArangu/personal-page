@@ -59,7 +59,7 @@ export default function Header() {
 
       {isMobileMenuOpen && (
         <div
-          className="fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden"
+          className="fixed inset-0 z-50 flex bg-black bg-opacity-80 lg:hidden"
           onClick={handleCloseMenu}
         >
           <aside className="relative ml-auto w-2/3 bg-secondary p-4 md:w-1/3">
