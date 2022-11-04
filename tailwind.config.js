@@ -43,9 +43,11 @@ module.exports = {
         },
         primary: {
           DEFAULT: "#051C3B",
+          dark: "#A6C0DB"
         },
         secondary: {
-          DEFAULT: "#6995C2"
+          DEFAULT: "#6995C2",
+          dark: "#002F59"
         },
         underscore: {
           DEFAULT: "#0160A4"
