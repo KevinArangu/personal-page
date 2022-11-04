@@ -13,10 +13,11 @@ export function useDarkMode(): UseDarkMode {
   const setDarkTheme = useCallback(() => setIsDark(true), []);
 
   useEffect(() => {
+    const body = document.querySelector("body")
     if (isDark) {
-      document.documentElement.classList.add("dark");
+      body?.classList.add("dark")
     } else if (!isDark) {
-      document.documentElement.classList.remove("dark");
+      body?.classList.remove("dark");
     }
   }, [isDark]);
 

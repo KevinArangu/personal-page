@@ -10,7 +10,7 @@ export default function MainLayout({ title, children }: MainLayoutProps) {
         <title>{title}</title>
       </Head>
 
-      <main>
+      <main className="dark:bg-primary">
         <Header />
         {children}
         <Footer />
