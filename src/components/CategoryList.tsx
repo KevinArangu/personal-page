@@ -12,11 +12,11 @@ export default function CategoryList ({title, list}: CategoryListProps) {
             <div className="pt-8">
 
             {list.map(({id, title, categories, comment})=> (
-              <div key={`grade-${id}`} className="border-b border-grey-lighter pb-8">
+              <div key={`grade-${id}`} className="border-b border-grey-lighter py-8 first:pt-0 last:pb-0">
                 <div className="flex items-center space-x-4">
                 {categories.map((category)=> (
                   <span key={`category-${category}`} 
-                  className={`mb-4 inline-block rounded-full px-2 py-1 font-body text-sm category-${category}`}>
+                  className={`mb-4 inline-block rounded-full px-2 py-1 font-body text-sm category-${category} capitalize`}>
                   {category}
                 </span>
                 ))}
