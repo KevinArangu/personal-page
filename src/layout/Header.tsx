@@ -27,15 +27,13 @@ export default function Header() {
           >
             {PERSONAL_INFO.name}
           </Link>
-          <div className="flex items-center lg:hidden">
+          <div className="flex items-center space-x-2 lg:hidden text-primary dark:text-white">
             <ToggleTheme onClick={toggleTheme} />
 
             <svg
-              width="24"
-              height="15"
               xmlns="http://www.w3.org/2000/svg"
               onClick={handleOpenMenu}
-              className="fill-current text-primary dark:text-white"
+              className="fill-current w-8 h-8 shrink-0"
             >
               <g fillRule="evenodd">
                 <rect width="24" height="3" rx="1.5" />
