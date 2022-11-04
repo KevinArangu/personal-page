@@ -49,3 +49,7 @@
 .category-fullstack {
   @apply text-indigo-100 bg-indigo-600;
 }
+
+.corners {
+  @apply rounded-md
+}

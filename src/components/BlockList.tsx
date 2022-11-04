@@ -15,7 +15,7 @@ export default function BlockList({ icon: Icon, title, list }: BlockListProps) {
         {list.map(({ id, title, description, comment, href, image }) => (
           <li
             key={`block-list-${id}`}
-            className="relative border border-secondary rounded-md shadow-md px-4 py-4 sm:px-6"
+            className="relative border border-secondary corners shadow-md px-4 py-4 sm:px-6"
           >
             {href && <Link href={href} className="absolute inset-0"></Link>}
             <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
