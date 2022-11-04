@@ -13,11 +13,11 @@ export default function UsesPage() {
             </h1>
 
             <div className="py-16 lg:py-20">
-              <ul className="flex flex-wrap space-x-2">
+              <ul className="flex flex-wrap gap-2">
                 {USES.map((use) => (
                   <li
                     key={use}
-                    className="bg-secondary py-1 px-2 rounded-sm font-body text-lg font-light text-primary dark:text-white"
+                    className="bg-secondary font-medium py-1 px-2 rounded-sm font-body text-lg shadow-sm text-primary dark:text-white"
                   >
                     {use}
                   </li>
