@@ -10,11 +10,11 @@ export default function BlockList({ title, list }: BlockListProps) {
         </h3>
       </div>
 
-      <ul>
+      <ul className="space-y-6">
         {list.map(({ id, title, description, comment, href, image }) => (
           <li
             key={`block-list-${id}`}
-            className="relative mb-6 border border-grey-lighter px-4 py-4 sm:px-6"
+            className="relative border border-secondary rounded-md shadow-md px-4 py-4 sm:px-6"
           >
             {href && <Link href={href} className="absolute inset-0"></Link>}
             <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
