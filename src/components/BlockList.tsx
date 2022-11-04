@@ -1,10 +1,11 @@
 import { BlockListProps } from "@/types/components.types";
 import Link from "next/link";
 
-export default function BlockList({ title, list }: BlockListProps) {
+export default function BlockList({ icon: Icon, title, list }: BlockListProps) {
   return (
     <>
-      <div className="flex items-center pb-6">
+      <div className="flex items-center pb-6 space-x-1">
+        {Icon && <Icon className="w-5 h-5 fill-current shrink-0" />}
         <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
           {title}
         </h3>

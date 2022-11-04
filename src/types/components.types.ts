@@ -8,6 +8,7 @@ export interface Category {
 export interface CategoryListProps {
   title: string;
   list: Category[];
+  icon?: React.ElementType;
 }
 
 export interface Block {
@@ -22,4 +23,5 @@ export interface Block {
 export interface BlockListProps {
   title: string;
   list: Block[];
+  icon?: React.ElementType;
 }

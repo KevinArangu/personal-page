@@ -8,6 +8,7 @@ import {
   PERSONAL_INFO,
 } from "@/utils/information";
 import Image from "next/image";
+import {AcademicCapIcon, BriefcaseIcon, ClipboardIcon} from "@heroicons/react/24/solid"
 
 export default function Home() {
   return (
@@ -34,15 +35,15 @@ export default function Home() {
           </div>
 
           <div className="py-16 lg:py-20">
-            <CategoryList title="My Grades" list={MY_GRADES} />
+            <CategoryList icon={AcademicCapIcon} title="My Grades" list={MY_GRADES} />
           </div>
 
           <div className="py-16 lg:py-20">
-            <CategoryList title="My Experience" list={MY_EXPERIENCE} />
+            <CategoryList icon={BriefcaseIcon} title="My Experience" list={MY_EXPERIENCE} />
           </div>
 
           <div className="py-16 lg:py-20">
-            <BlockList title="My Courses" list={MY_COURSES} />
+            <BlockList icon={ClipboardIcon} title="My Courses" list={MY_COURSES} />
           </div>
         </div>
       </div>
