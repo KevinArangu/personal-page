@@ -15,6 +15,7 @@ export function useDarkMode(): UseDarkMode {
 
   useEffect(() => {
     const body = document.querySelector("body");
+
     if (isDark && body) {
       body.classList.add("dark");
       localStorage.setItem(LS_KEY, "dark");

@@ -2,7 +2,7 @@ import { useApp } from "@/context/AppContext";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 
-export default function ToggleTheme() {
+export default function ToggleTheme({ onClick = () => {} }) {
   const { isDark, toggleTheme } = useApp();
   const [isDarkTheme, setIsDarkTheme] = useState(isDark);
 
@@ -11,7 +11,7 @@ export default function ToggleTheme() {
   }, [isDark]);
 
   return (
-    <button type="button">
+    <button type="button" onClick={onClick}>
       {isDarkTheme && (
         <SunIcon
           onClick={toggleTheme}

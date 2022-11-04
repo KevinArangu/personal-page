@@ -28,10 +28,7 @@ export default function Header() {
             {PERSONAL_INFO.name}
           </Link>
           <div className="flex items-center lg:hidden">
-            <i
-              className="bx mr-8 cursor-pointer text-3xl text-primary dark:text-white bxs-sun dark:bxs-moon"
-              onClick={toggleTheme}
-            ></i>
+            <ToggleTheme onClick={toggleTheme} />
 
             <svg
               width="24"
@@ -61,11 +58,8 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
-              <li
-                className="cursor-pointer text-primary dark:text-white"
-                onClick={toggleTheme}
-              >
-                <ToggleTheme />
+              <li className="cursor-pointer text-primary dark:text-white">
+                <ToggleTheme onClick={toggleTheme} />
               </li>
             </ul>
           </nav>
