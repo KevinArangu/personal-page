@@ -14,6 +14,7 @@ export default function Home() {
                 src={PERSONAL_INFO.photo}
                 className="h-16 w-16 rounded-full"
                 alt="author"
+                unoptimized
               />
             </div>
             <h1 className="pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">

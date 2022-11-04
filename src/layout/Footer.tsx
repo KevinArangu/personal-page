@@ -14,7 +14,7 @@ export default function Footer() {
           <Link href={PERSONAL_INFO.networks.github} target="_blank">
             <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
           </Link>
-          <Link href={PERSONAL_INFO.networks.github} target="_blank">
+          <Link href={PERSONAL_INFO.networks.linkedin} target="_blank">
             <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin"></i>
           </Link>
         </div>
