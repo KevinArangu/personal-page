@@ -25,11 +25,11 @@ export default function Home() {
             <CategoryList title="My Grades" list={MY_GRADES} />
           </div>
 
-          <div className="py-16 lg:pb-20">
+          <div className="py-16 lg:py-20">
             <CategoryList title="My Experience" list={MY_EXPERIENCE} />
           </div>
 
-          <div className="pb-16 lg:pb-20">
+          <div className="py-16 lg:py-20">
             <BlockList />
           </div>
         </div>
