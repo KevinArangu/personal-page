@@ -16,10 +16,7 @@ export default function Heads() {
         content="Hi! my name is Kevin Arangu, i live in Venezuela and this is my developer portfolio, welcome!."
       />
       <link rel="icon" type="image/png" href="favicon.png" />
-      <meta
-        property="og:image"
-        content="favicon.png"
-      />
+      <meta property="og:image" content="favicon.png" />
       <meta property="og:site_name" content="Kevin Arangu" />
       <meta name="twitter:card" content="summary_large_image" />
       {/* <meta name="twitter:site" content="@tailwindmade" /> */}

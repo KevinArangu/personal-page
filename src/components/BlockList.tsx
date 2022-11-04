@@ -6,9 +6,7 @@ export default function BlockList({ icon: Icon, title, list }: BlockListProps) {
     <>
       <div className="flex items-center pb-6 space-x-2 text-primary dark:text-white">
         {Icon && <Icon className="w-6 h-6 fill-current shrink-0" />}
-        <h3 className="font-body text-2xl font-semibold ">
-          {title}
-        </h3>
+        <h3 className="font-body text-2xl font-semibold ">{title}</h3>
       </div>
 
       <ul className="space-y-6">

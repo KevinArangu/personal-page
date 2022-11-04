@@ -61,7 +61,10 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
-              <li className="cursor-pointer text-primary dark:text-white" onClick={toggleTheme}>
+              <li
+                className="cursor-pointer text-primary dark:text-white"
+                onClick={toggleTheme}
+              >
                 <ToggleTheme />
               </li>
             </ul>

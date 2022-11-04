@@ -1,13 +1,15 @@
 import { CategoryListProps } from "@/types/components.types";
 
-export default function CategoryList({ icon: Icon, title, list }: CategoryListProps) {
+export default function CategoryList({
+  icon: Icon,
+  title,
+  list,
+}: CategoryListProps) {
   return (
     <>
       <div className="flex items-center pb-6 space-x-2 text-primary dark:text-white">
         {Icon && <Icon className="w-6 h-6 fill-current shrink-0" />}
-        <h3 className="font-body text-2xl font-semibold ">
-          {title}
-        </h3>
+        <h3 className="font-body text-2xl font-semibold ">{title}</h3>
       </div>
 
       <div className="pt-8 divide-y divide-grey-lighter ">
