@@ -30,10 +30,9 @@ export default function Header() {
           </Link>
           <div className="flex items-center space-x-2 lg:hidden text-primary dark:text-white">
             <ToggleTheme onClick={toggleTheme} />
-            <Bars3BottomRightIcon
-              onClick={handleOpenMenu}
-              className="fill-current w-8 h-8 shrink-0"
-            />
+            <button type="button" onClick={handleOpenMenu}>
+              <Bars3BottomRightIcon className="fill-current w-8 h-8 shrink-0" />
+            </button>
           </div>
 
           <nav className="hidden lg:block">
@@ -64,7 +63,7 @@ export default function Header() {
         >
           <aside className="relative ml-auto w-2/3 bg-secondary p-4 md:w-1/3">
             <XMarkIcon
-              className="h-6 w-6 shrink-0 fill-white absolute top-0 right-0 mt-4 mr-4"
+              className="h-8 w-8 shrink-0 fill-white absolute top-0 right-0 mt-6 mr-4"
               onClick={handleCloseMenu}
             />
             <ul className="mt-8 flex flex-col">
