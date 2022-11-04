@@ -9,7 +9,7 @@ const AppContextDefaultValues: AppContextType = {
   setDarkTheme: () => {},
 };
 
-const AppContext = createContext<AppContextType>(AppContextDefaultValues);
+export const AppContext = createContext<AppContextType>(AppContextDefaultValues);
 
 export function AppProvider({ children }: AppProviderProps) {
   const theme = useDarkMode();
