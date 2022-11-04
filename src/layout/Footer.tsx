@@ -12,10 +12,10 @@ export default function Footer() {
         </div>
         <div className="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0">
           <Link href={PERSONAL_INFO.networks.github} target="_blank">
-            <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
+            <img alt="github logo" src="github.png" className="w-8 h-8 shrink-0" />
           </Link>
           <Link href={PERSONAL_INFO.networks.linkedin} target="_blank">
-            <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin"></i>
+            <img alt="linkedin logo" src="linkedin.png" className="w-8 h-8 shrink-0" /> 
           </Link>
         </div>
       </div>
