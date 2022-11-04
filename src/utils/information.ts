@@ -50,4 +50,10 @@ export const MY_EXPERIENCE = [
     categories: ["front-end", "developer"],
     comment: "May 2021 - October 2022",
   },
+  {
+    id: 4,
+    title: "IPCOM",
+    categories: ["fullstack", "developer"],
+    comment: "October 2022 - Currently",
+  },
 ];
