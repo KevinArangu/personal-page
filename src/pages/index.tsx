@@ -2,7 +2,6 @@ import CategoryList from "@/components/CategoryList";
 import MainLayout from "@/layout/MainLayout";
 import { MY_EXPERIENCE, MY_GRADES, PERSONAL_INFO } from "@/utils/information";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (

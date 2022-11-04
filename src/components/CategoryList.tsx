@@ -9,11 +9,11 @@ export default function CategoryList({ title, list }: CategoryListProps) {
         </h3>
       </div>
 
-      <div className="pt-8">
+      <div className="pt-8 divide-y divide-grey-lighter ">
         {list.map(({ id, title, categories, comment }) => (
           <div
             key={`grade-${id}`}
-            className="border-b border-grey-lighter py-8 first:pt-0"
+            className="py-8 first:pt-0 last:pb-0"
           >
             <div className="flex items-center space-x-4">
               {categories.map((category) => (
