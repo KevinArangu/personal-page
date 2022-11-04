@@ -11,7 +11,22 @@ export const PERSONAL_INFO = {
 };
 
 export const MY_GRADES = [
-  { id: 1, title: "U.E.E Dr Argimiro Bracamonte II", categories: ["elementary-school"], comment: "2004 - 2009" },
-  { id: 2, title: "U.E.C. Federico Froebel", categories: ["high-school"], comment: "2009 - 2014" },
-  { id: 3, title: "Universidad Fermín Toro", categories: ["university"], comment: "2014-2020" },
-]
+  {
+    id: 1,
+    title: "U.E.E Dr Argimiro Bracamonte II",
+    categories: ["elementary-school"],
+    comment: "2004 - 2009",
+  },
+  {
+    id: 2,
+    title: "U.E.C. Federico Froebel",
+    categories: ["high-school"],
+    comment: "2009 - 2014",
+  },
+  {
+    id: 3,
+    title: "Universidad Fermín Toro",
+    categories: ["university"],
+    comment: "2014-2020",
+  },
+];

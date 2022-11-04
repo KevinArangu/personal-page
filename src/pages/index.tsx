@@ -10,14 +10,8 @@ export default function Home() {
       <div>
         <div className="container mx-auto">
           <div className="border-b border-grey-lighter py-16 lg:py-20">
-            <div 
-              className="h-16 w-16 rounded-full overflow-hidden"
-            >
-              <Image
-                src={PERSONAL_INFO.photo}
-                alt="author"
-                unoptimized
-              />
+            <div className="h-16 w-16 rounded-full overflow-hidden">
+              <Image src={PERSONAL_INFO.photo} alt="author" unoptimized />
             </div>
             <h1 className="pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
               Hi, I’m <span>{PERSONAL_INFO.name}</span>.

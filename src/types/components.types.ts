@@ -1,5 +1,5 @@
 export interface Category {
-  id: number
+  id: number;
   categories: string[];
   title: string;
   comment?: string;
@@ -7,5 +7,5 @@ export interface Category {
 
 export interface CategoryListProps {
   title: string;
-  list: Category[]
+  list: Category[];
 }
