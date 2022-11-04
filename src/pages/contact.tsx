@@ -1,11 +1,9 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import MainLayout from "@/layout/MainLayout";
+import { PERSONAL_INFO } from "@/utils/information";
 
 export default function ContactPage() {
   return (
-    <main>
-      <Header />
-
+    <MainLayout title={`Contact | ${PERSONAL_INFO.name}`}>
       <div>
         <div className="container mx-auto">
           <div className="py-16 lg:py-20">
@@ -65,8 +63,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-
-      <Footer />
-    </main>
+    </MainLayout>
   );
 }

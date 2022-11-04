@@ -1,20 +1,18 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import MainLayout from "@/layout/MainLayout";
 import { PERSONAL_INFO } from "@/utils/information";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-
+    <MainLayout title={`Me | ${PERSONAL_INFO.name}`}>
       <div>
         <div className="container mx-auto">
           <div className="border-b border-grey-lighter py-16 lg:py-20">
             <div>
-              <img
-                src="/assets/img/author.png"
-                className="h-16 w-16"
+              <Image
+                src={PERSONAL_INFO.photo}
+                className="h-16 w-16 rounded-full"
                 alt="author"
               />
             </div>
@@ -24,12 +22,12 @@ export default function Home() {
             <p className="pt-3 font-body text-xl font-light text-primary dark:text-white">
               {PERSONAL_INFO.shortDescription}
             </p>
-            <Link
+            {/* <Link
               href="/"
               className="mt-12 block bg-secondary px-10 py-4 text-center font-body text-xl font-semibold text-white transition-colors hover:bg-green sm:inline-block sm:text-left sm:text-2xl"
             >
               Say Hello!
-            </Link>
+            </Link> */}
           </div>
 
           <div className="border-b border-grey-lighter py-16 lg:py-20">
@@ -249,8 +247,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <Footer />
-    </main>
+    </MainLayout>
   );
 }

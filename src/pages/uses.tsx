@@ -1,12 +1,10 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import MainLayout from "@/layout/MainLayout";
+import { PERSONAL_INFO } from "@/utils/information";
 import Link from "next/link";
 
 export default function UsesPage() {
   return (
-    <main>
-      <Header />
-
+    <MainLayout title={`Uses | ${PERSONAL_INFO.name}`}>
       <div>
         <div className="container mx-auto">
           <div className="py-16 lg:py-20">
@@ -83,8 +81,6 @@ export default function UsesPage() {
           </div>
         </div>
       </div>
-
-      <Footer />
-    </main>
+    </MainLayout>
   );
 }
