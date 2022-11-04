@@ -4,7 +4,6 @@ export default function CategoryList({ title, list }: CategoryListProps) {
   return (
     <>
       <div className="flex items-center pb-6">
-        <img src="/assets/img/icon-story.png" alt="icon story" />
         <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
           {title}
         </h3>
