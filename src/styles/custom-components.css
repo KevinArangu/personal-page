@@ -1,16 +1,4 @@
 
-.container {
-  max-width: 600px;
-
-  @screen sm {
-    max-width: 700px;
-  }
-
-  @screen md {
-    max-width: 850px;
-  }
-}
-
 .twitter-card {
   @apply mt-8 mb-8 rounded bg-yellow-lighter px-6 py-8 sm:mt-10 sm:mb-10 md:px-10;
 
