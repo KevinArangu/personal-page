@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { PERSONAL_INFO } from "@/utils/information";
 import ToggleTheme from "@/components/ToggleTheme";
+import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
 
 const NAV_ITEMS = [
   { id: 1, name: "Me", href: "/" },
@@ -29,18 +30,10 @@ export default function Header() {
           </Link>
           <div className="flex items-center space-x-2 lg:hidden text-primary dark:text-white">
             <ToggleTheme onClick={toggleTheme} />
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
+            <Bars3BottomRightIcon
               onClick={handleOpenMenu}
               className="fill-current w-8 h-8 shrink-0"
-            >
-              <g fillRule="evenodd">
-                <rect width="24" height="3" rx="1.5" />
-                <rect x="8" y="6" width="16" height="3" rx="1.5" />
-                <rect x="4" y="12" width="20" height="3" rx="1.5" />
-              </g>
-            </svg>
+            />
           </div>
 
           <nav className="hidden lg:block">
