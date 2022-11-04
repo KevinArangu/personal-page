@@ -1,7 +1,7 @@
 import BlockList from "@/components/BlockList";
 import CategoryList from "@/components/CategoryList";
 import MainLayout from "@/layout/MainLayout";
-import { MY_EXPERIENCE, MY_GRADES, PERSONAL_INFO } from "@/utils/information";
+import { MY_COURSES, MY_EXPERIENCE, MY_GRADES, PERSONAL_INFO } from "@/utils/information";
 import Image from "next/image";
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           <div className="py-16 lg:py-20">
-            <BlockList />
+            <BlockList title="My Courses" list={MY_COURSES} />
           </div>
         </div>
       </div>
