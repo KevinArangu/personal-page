@@ -2,6 +2,7 @@ import { useApp } from "@/context/AppContext";
 import Link from "next/link";
 import { useState } from "react";
 import { PERSONAL_INFO } from "@/utils/information";
+import ToggleTheme from "@/components/ToggleTheme";
 
 const NAV_ITEMS = [
   { id: 1, name: "Me", href: "/" },
@@ -60,8 +61,8 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
-              <li className="cursor-pointer " onClick={toggleTheme}>
-                <i className="bx text-3xl text-primary dark:text-white bxs-moon dark:bxs-sun"></i>
+              <li className="cursor-pointer text-primary dark:text-white" onClick={toggleTheme}>
+                <ToggleTheme />
               </li>
             </ul>
           </nav>
