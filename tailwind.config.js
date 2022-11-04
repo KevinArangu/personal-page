@@ -45,7 +45,10 @@ module.exports = {
           DEFAULT: "#072344",
         },
         secondary: {
-          DEFAULT:"#00aaa1"
+          DEFAULT: "#00aaa1"
+        },
+        underscore: {
+          default: "#00aaa1"
         },
         "green-light": {
           DEFAULT: "#cceeec"

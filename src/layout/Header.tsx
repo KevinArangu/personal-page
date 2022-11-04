@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="container mx-auto">
+      <header className="container mx-auto">
         <div className="flex items-center justify-between py-6 lg:py-10">
           <Link
             href="/"
@@ -51,10 +51,10 @@ export default function Header() {
             <ul className="flex items-center">
               {NAV_ITEMS.map(({ id, name, href }) => (
                 <li key={`nav-item-${id}`} className="group relative mr-6 mb-1">
-                  <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
+                  <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-underscore"></div>
                   <Link
                     href={href}
-                    className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary"
+                    className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors dark:text-white group-hover:text-secondary"
                   >
                     {name}
                   </Link>
@@ -69,14 +69,14 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-      </div>
+      </header>
 
-      <div
+      <aside
         className={`pointer-events-none fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden ${
           isMobileMenuOpen ? "opacity-100 pointer-events-auto" : ""
         }`}
       >
-        <div className="ml-auto w-2/3 bg-green p-4 md:w-1/3">
+        <div className="ml-auto w-2/3 bg-secondary p-4 md:w-1/3">
           <i
             className="bx bx-x absolute top-0 right-0 mt-4 mr-4 text-4xl text-white"
             onClick={handleCloseMenu}
@@ -94,7 +94,7 @@ export default function Header() {
             ))}
           </ul>
         </div>
-      </div>
+      </aside>
     </>
   );
 }
