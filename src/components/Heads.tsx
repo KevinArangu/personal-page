@@ -9,23 +9,20 @@ export default function Heads() {
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
         name="viewport"
       />
-      <title>Homepage | Atlas Template</title>
-      <meta property="og:title" content="Homepage | Atlas Template" />
       <meta property="og:locale" content="en_US" />
-      <link rel="canonical" href="https://atlas.tailwindmade.com/" />
-      <meta property="og:url" content="https://atlas.tailwindmade.com/" />
+      {/* <meta property="og:url" content="https://atlas.tailwindmade.com/" /> */}
       <meta
         name="description"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        content="Hi! my name is Kevin Arangu, i live in Venezuela and this is my developer portfolio, welcome!."
       />
-      <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
-      <meta property="og:site_name" content="Atlas Template" />
+      <link rel="icon" type="image/png" href="favicon.png" />
       <meta
         property="og:image"
-        content="https://atlas.tailwindmade.com/assets/img/social.jpg"
+        content="favicon.png"
       />
+      <meta property="og:site_name" content="Kevin Arangu" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@tailwindmade" />
+      {/* <meta name="twitter:site" content="@tailwindmade" /> */}
       <link
         crossOrigin="crossorigin"
         href="https://fonts.gstatic.com"
@@ -39,10 +36,6 @@ export default function Heads() {
       <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"
-      />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       />
     </Head>
   );
