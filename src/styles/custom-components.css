@@ -1,4 +1,8 @@
 
+.container {
+  @apply max-w-[600px] sm:max-w-[700px] md:max-w-[850px]
+}
+
 .twitter-card {
   @apply mt-8 mb-8 rounded bg-yellow-lighter px-6 py-8 sm:mt-10 sm:mb-10 md:px-10;
 
