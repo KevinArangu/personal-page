@@ -1,6 +1,5 @@
 import MainLayout from "@/layout/MainLayout";
-import { PERSONAL_INFO } from "@/utils/information";
-import { USES } from "@/utils/information";
+import { PERSONAL_INFO, USES } from "@/utils/information";
 
 export default function UsesPage() {
   return (
@@ -17,7 +16,7 @@ export default function UsesPage() {
                 {USES.map((use) => (
                   <li
                     key={use}
-                    className="bg-secondary font-medium py-1 px-2 rounded-sm font-body text-lg shadow-sm text-primary dark:text-white"
+                    className="bg-secondary font-medium py-1 px-3 rounded-sm font-body text-lg shadow-sm text-primary dark:text-white"
                   >
                     {use}
                   </li>

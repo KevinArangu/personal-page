@@ -289,4 +289,6 @@ export const USES = [
   "dotenv",
   "Multer",
   "Joy",
-];
+  "Chart.js",
+  "Heroicons"
+].sort(()=> Math.random() - 0.5);
