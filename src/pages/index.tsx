@@ -1,7 +1,12 @@
 import BlockList from "@/components/BlockList";
 import CategoryList from "@/components/CategoryList";
 import MainLayout from "@/layout/MainLayout";
-import { MY_COURSES, MY_EXPERIENCE, MY_GRADES, PERSONAL_INFO } from "@/utils/information";
+import {
+  MY_COURSES,
+  MY_EXPERIENCE,
+  MY_GRADES,
+  PERSONAL_INFO,
+} from "@/utils/information";
 import Image from "next/image";
 
 export default function Home() {

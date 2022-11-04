@@ -21,5 +21,5 @@ export interface Block {
 
 export interface BlockListProps {
   title: string;
-  list: Block[]
+  list: Block[];
 }

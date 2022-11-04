@@ -11,13 +11,13 @@ export default function BlockList({ title, list }: BlockListProps) {
       </div>
 
       <div>
-        {list.map(({id, title, description, comment, href, image})=>(
+        {list.map(({ id, title, description, comment, href, image }) => (
           <Link
-          key={`block-list-${id}`}
-          href={href}
-          className="mb-6 border border-grey-lighter px-4 py-4 sm:px-6"
-        >
-          <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
+            key={`block-list-${id}`}
+            href={href}
+            className="mb-6 border border-grey-lighter px-4 py-4 sm:px-6"
+          >
+            <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
               {title}
             </h4>
             <p className="font-body font-light text-primary dark:text-white">
@@ -27,7 +27,7 @@ export default function BlockList({ title, list }: BlockListProps) {
               {"// "}
               {comment}
             </p>
-        </Link>
+          </Link>
         ))}
       </div>
     </>

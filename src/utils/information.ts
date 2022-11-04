@@ -65,7 +65,7 @@ export const MY_COURSES = [
     description: "Cisco Networking Academy",
     comment: "November 2016",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 2,
@@ -73,7 +73,7 @@ export const MY_COURSES = [
     description: "CADIF1 Academy",
     comment: "March 2018",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 3,
@@ -81,7 +81,7 @@ export const MY_COURSES = [
     description: "Cisco Networking Academy",
     comment: "August 2018",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 4,
@@ -89,7 +89,7 @@ export const MY_COURSES = [
     description: "Telecapp Academy",
     comment: "December 2019",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 5,
@@ -97,7 +97,7 @@ export const MY_COURSES = [
     description: "Telecapp Academy",
     comment: "February 2020",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 6,
@@ -105,7 +105,7 @@ export const MY_COURSES = [
     description: "Telecapp Academy",
     comment: "March 2020",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 7,
@@ -113,7 +113,7 @@ export const MY_COURSES = [
     description: "Udemy Academy",
     comment: "April 2020",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 8,
@@ -121,7 +121,7 @@ export const MY_COURSES = [
     description: "Google",
     comment: "September 2020",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 9,
@@ -129,7 +129,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "March 2021",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 10,
@@ -137,7 +137,7 @@ export const MY_COURSES = [
     description: "Codigo Facilito Academy",
     comment: "June 2021",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 11,
@@ -145,7 +145,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "July 2021",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 12,
@@ -153,7 +153,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "March 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 13,
@@ -161,7 +161,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "March 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 14,
@@ -169,7 +169,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "April 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 15,
@@ -177,7 +177,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "August 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 16,
@@ -185,7 +185,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "August 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 17,
@@ -193,7 +193,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "August 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 18,
@@ -201,7 +201,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "August 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 19,
@@ -209,7 +209,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "September 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 19,
@@ -217,7 +217,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "September 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 20,
@@ -225,7 +225,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "Octuber 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 21,
@@ -233,7 +233,7 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "Octuber 2022",
     href: "",
-    image: ""
+    image: "",
   },
   {
     id: 22,
@@ -241,6 +241,6 @@ export const MY_COURSES = [
     description: "Platzi",
     comment: "Octuber 2022",
     href: "",
-    image: ""
+    image: "",
   },
 ].reverse();
