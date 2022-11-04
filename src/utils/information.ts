@@ -290,5 +290,5 @@ export const USES = [
   "Multer",
   "Joy",
   "Chart.js",
-  "Heroicons"
-].sort(()=> Math.random() - 0.5);
+  "Heroicons",
+].sort(() => Math.random() - 0.5);

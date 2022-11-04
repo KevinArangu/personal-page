@@ -14,14 +14,21 @@ export default function Home() {
     <MainLayout title={`Me | ${PERSONAL_INFO.name}`}>
       <div>
         <div className="container mx-auto">
-          <div className="border-b border-grey-lighter py-16 lg:py-20">
-            <div className="h-16 w-16 rounded-full overflow-hidden">
-              <Image src={PERSONAL_INFO.photo} alt="author" unoptimized />
+          <div className="flex flex-col items-center border-b border-grey-lighter py-16 lg:py-20">
+            <div className="relative h-24 w-24 rounded-full overflow-hidden">
+              <div className="absolute inset-0">
+                <Image
+                  className="object-cover w-full h-full"
+                  src={PERSONAL_INFO.photo}
+                  alt="author"
+                  unoptimized
+                />
+              </div>
             </div>
-            <h1 className="pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
+            <h1 className="text-center pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
               Hi, I’m <span>{PERSONAL_INFO.name}</span>.
             </h1>
-            <p className="pt-3 font-body text-xl font-light text-primary dark:text-white">
+            <p className="text-center pt-3 font-body text-xl font-light text-primary dark:text-white">
               {PERSONAL_INFO.shortDescription}
             </p>
           </div>
