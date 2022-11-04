@@ -30,3 +30,24 @@ export const MY_GRADES = [
     comment: "2014-2020",
   },
 ];
+
+export const MY_EXPERIENCE = [
+  {
+    id: 1,
+    title: "Proyecto e Inversiones M.V. Miranda C.A.",
+    categories: ["networking", "engineering"],
+    comment: "March 2019 - September 2020",
+  },
+  {
+    id: 2,
+    title: "Intercom Servicios C.A.",
+    categories: ["networking", "engineering", "noc"],
+    comment: "October 2020 - May 2021",
+  },
+  {
+    id: 3,
+    title: "Carlatino",
+    categories: ["front-end", "developer"],
+    comment: "May 2021 - October 2022",
+  },
+];
