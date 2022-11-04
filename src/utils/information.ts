@@ -34,7 +34,7 @@ export const MY_GRADES = [
 export const MY_EXPERIENCE = [
   {
     id: 1,
-    title: "Proyecto e Inversiones M.V. Miranda C.A.",
+    title: "Proyectos e Inversiones M.V. Miranda C.A.",
     categories: ["networking", "engineering"],
     comment: "March 2019 - September 2020",
   },

@@ -16,7 +16,7 @@ export default function Home() {
       <div>
         <div className="container mx-auto">
           <div className="flex flex-col items-center border-b border-grey-lighter py-16 lg:py-20">
-            <div className="relative h-24 w-24 rounded-full overflow-hidden">
+            <div className="relative h-28 w-28 rounded-full overflow-hidden ring-2 ring-secondary shadow-md">
               <div className="absolute inset-0">
                 <Image
                   className="object-cover w-full h-full"
