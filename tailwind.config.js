@@ -42,13 +42,13 @@ module.exports = {
           DEFAULT:"transparent",
         },
         primary: {
-          DEFAULT: "#072344",
+          DEFAULT: "#051C3B",
         },
         secondary: {
-          DEFAULT: "#00aaa1"
+          DEFAULT: "#6995C2"
         },
         underscore: {
-          default: "#00aaa1"
+          DEFAULT: "#0160A4"
         },
         "green-light": {
           DEFAULT: "#cceeec"
