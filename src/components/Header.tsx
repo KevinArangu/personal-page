@@ -3,6 +3,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { PERSONAL_INFO } from "@/utils/information";
 
+const NAV_ITEMS = [
+  { id: 1, name: "Me", href: "/" },
+  { id: 1, name: "Uses", href: "/uses" },
+  { id: 1, name: "Contact", href: "/contact" },
+];
+
 export default function Header() {
   const { toggleTheme } = useApp();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,13 +20,11 @@ export default function Header() {
     <>
       <div className="container mx-auto">
         <div className="flex items-center justify-between py-6 lg:py-10">
-          <Link href="/" className="flex items-center">
-            <Link href="/" className="mr-2">
-              <img src="/assets/img/logo.svg" alt="logo" />
-            </Link>
-            <p className="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block">
-              {PERSONAL_INFO.name}
-            </p>
+          <Link
+            href="/"
+            className="flex items-center font-body text-2xl font-bold text-primary dark:text-white"
+          >
+            {PERSONAL_INFO.name}
           </Link>
           <div className="flex items-center lg:hidden">
             <i
@@ -42,38 +46,20 @@ export default function Header() {
               </g>
             </svg>
           </div>
-          <div className="hidden lg:block">
+
+          <nav className="hidden lg:block">
             <ul className="flex items-center">
-              <li className="group relative mr-6 mb-1">
-                <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
-                <Link
-                  href="/"
-                  className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary"
-                >
-                  Me
-                </Link>
-              </li>
-
-              <li className="group relative mr-6 mb-1">
-                <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
-                <Link
-                  href="/uses"
-                  className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary"
-                >
-                  Uses
-                </Link>
-              </li>
-
-              <li className="group relative mr-6 mb-1">
-                <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
-                <Link
-                  href="/contact"
-                  className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary"
-                >
-                  Contact
-                </Link>
-              </li>
-
+              {NAV_ITEMS.map(({ id, name, href }) => (
+                <li key={`nav-item-${id}`} className="group relative mr-6 mb-1">
+                  <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
+                  <Link
+                    href={href}
+                    className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary"
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <i
                   className="bx cursor-pointer text-3xl text-primary dark:text-white bxs-moon dark:bxs-sun"
@@ -81,7 +67,7 @@ export default function Header() {
                 ></i>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
 
@@ -96,32 +82,16 @@ export default function Header() {
             onClick={handleCloseMenu}
           ></i>
           <ul className="mt-8 flex flex-col">
-            <li className="">
-              <Link
-                href="/"
-                className="mb-3 block px-2 font-body text-lg font-medium text-white"
-              >
-                Me
-              </Link>
-            </li>
-
-            <li className="">
-              <Link
-                href="/uses"
-                className="mb-3 block px-2 font-body text-lg font-medium text-white"
-              >
-                Uses
-              </Link>
-            </li>
-
-            <li className="">
-              <Link
-                href="/contact"
-                className="mb-3 block px-2 font-body text-lg font-medium text-white"
-              >
-                Contact
-              </Link>
-            </li>
+            {NAV_ITEMS.map(({ id, name, href }) => (
+              <li key={`menu-item-${id}`} className="">
+                <Link
+                  href={href}
+                  className="mb-3 block px-2 font-body text-lg font-medium text-white"
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
