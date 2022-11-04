@@ -1,9 +1,9 @@
+import ToggleTheme from "@/components/ToggleTheme";
 import { useApp } from "@/context/AppContext";
+import { PERSONAL_INFO } from "@/utils/information";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { useState } from "react";
-import { PERSONAL_INFO } from "@/utils/information";
-import ToggleTheme from "@/components/ToggleTheme";
-import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
 
 const NAV_ITEMS = [
   { id: 1, name: "Me", href: "/" },
@@ -57,30 +57,31 @@ export default function Header() {
         </div>
       </header>
 
-      <aside
-        className={`pointer-events-none fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden ${
-          isMobileMenuOpen ? "opacity-100 pointer-events-auto" : ""
-        }`}
-      >
-        <div className="ml-auto w-2/3 bg-secondary p-4 md:w-1/3">
-          <i
-            className="bx bx-x absolute top-0 right-0 mt-4 mr-4 text-4xl text-white"
-            onClick={handleCloseMenu}
-          ></i>
-          <ul className="mt-8 flex flex-col">
-            {NAV_ITEMS.map(({ id, name, href }) => (
-              <li key={`menu-item-${id}`} className="">
-                <Link
-                  href={href}
-                  className="mb-3 block px-2 font-body text-lg font-medium text-white"
-                >
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden"
+          onClick={handleCloseMenu}
+        >
+          <aside className="relative ml-auto w-2/3 bg-secondary p-4 md:w-1/3">
+            <XMarkIcon
+              className="h-6 w-6 shrink-0 fill-white absolute top-0 right-0 mt-4 mr-4"
+              onClick={handleCloseMenu}
+            />
+            <ul className="mt-8 flex flex-col">
+              {NAV_ITEMS.map(({ id, name, href }) => (
+                <li key={`menu-item-${id}`} className="">
+                  <Link
+                    href={href}
+                    className="mb-3 block px-2 font-body text-lg font-medium text-white"
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </aside>
         </div>
-      </aside>
+      )}
     </>
   );
 }
