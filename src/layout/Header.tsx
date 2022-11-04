@@ -60,14 +60,8 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
-              <li
-              className="cursor-pointer "
-                  onClick={toggleTheme}
-              
-              >
-                <i
-                  className="bx text-3xl text-primary dark:text-white bxs-moon dark:bxs-sun"
-                ></i>
+              <li className="cursor-pointer " onClick={toggleTheme}>
+                <i className="bx text-3xl text-primary dark:text-white bxs-moon dark:bxs-sun"></i>
               </li>
             </ul>
           </nav>
