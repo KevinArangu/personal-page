@@ -8,7 +8,10 @@ const INITIAL_VALUE = INITIAL_LS_VALUE === "dark" ? true : false;
 export function useDarkMode(): UseDarkMode {
   const [isDark, setIsDark] = useState(INITIAL_VALUE);
 
-  const toggleTheme = useCallback(() => setIsDark(!isDark), [isDark]);
+  const toggleTheme = useCallback(() => {
+    console.log(!isDark)
+    setIsDark(!isDark)
+  }, [isDark]);
   const setLightTheme = useCallback(() => setIsDark(false), []);
   const setDarkTheme = useCallback(() => setIsDark(true), []);
 
