@@ -11,10 +11,7 @@ export default function CategoryList({ title, list }: CategoryListProps) {
 
       <div className="pt-8 divide-y divide-grey-lighter ">
         {list.map(({ id, title, categories, comment }) => (
-          <div
-            key={`grade-${id}`}
-            className="py-8 first:pt-0 last:pb-0"
-          >
+          <div key={`grade-${id}`} className="py-8 first:pt-0 last:pb-0">
             <div className="flex items-center space-x-4">
               {categories.map((category) => (
                 <span

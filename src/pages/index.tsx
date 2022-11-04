@@ -1,3 +1,4 @@
+import BlockList from "@/components/BlockList";
 import CategoryList from "@/components/CategoryList";
 import MainLayout from "@/layout/MainLayout";
 import { MY_EXPERIENCE, MY_GRADES, PERSONAL_INFO } from "@/utils/information";
@@ -26,6 +27,10 @@ export default function Home() {
 
           <div className="py-16 lg:pb-20">
             <CategoryList title="My Experience" list={MY_EXPERIENCE} />
+          </div>
+
+          <div className="pb-16 lg:pb-20">
+            <BlockList />
           </div>
         </div>
       </div>

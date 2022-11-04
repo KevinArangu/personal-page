@@ -15,37 +15,37 @@
 }
 
 .category-elementary-school {
-  @apply text-green-100 bg-green-600
+  @apply text-green-100 bg-green-600;
 }
 
 .category-high-school {
-  @apply text-yellow-100 bg-yellow-600
+  @apply text-yellow-100 bg-yellow-600;
 }
 
 .category-university {
-  @apply text-red-100 bg-red-600
+  @apply text-red-100 bg-red-600;
 }
 
 .category-networking {
-  @apply text-blue-100 bg-blue-600
+  @apply text-blue-100 bg-blue-600;
 }
 
 .category-engineering {
-  @apply text-white bg-black
+  @apply text-white bg-black;
 }
 
 .category-noc {
-  @apply text-cyan-100 bg-cyan-600
+  @apply text-cyan-100 bg-cyan-600;
 }
 
 .category-developer {
-  @apply text-emerald-100 bg-emerald-600
+  @apply text-emerald-100 bg-emerald-600;
 }
 
 .category-front-end {
-  @apply text-teal-100 bg-teal-600
+  @apply text-teal-100 bg-teal-600;
 }
 
 .category-fullstack {
-  @apply text-indigo-100 bg-indigo-600
+  @apply text-indigo-100 bg-indigo-600;
 }

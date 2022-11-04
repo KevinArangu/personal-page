@@ -57,3 +57,11 @@ export const MY_EXPERIENCE = [
     comment: "October 2022 - Currently",
   },
 ];
+
+export const MY_COURSES = [
+  {
+    id: 1,
+    title: "Proyecto e Inversiones M.V. Miranda C.A.",
+    comment: "March 2019 - September 2020",
+  },
+];
