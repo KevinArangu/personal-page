@@ -1,7 +1,7 @@
 import { useApp } from "@/context/AppContext";
 import Link from "next/link";
 import { useState } from "react";
-import {PERSONAL_INFO} from "@/utils/information";
+import { PERSONAL_INFO } from "@/utils/information";
 
 export default function Header() {
   const { toggleTheme } = useApp();
@@ -84,7 +84,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      
+
       <div
         className={`pointer-events-none fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden ${
           isMobileMenuOpen ? "opacity-100 pointer-events-auto" : ""

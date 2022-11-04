@@ -6,7 +6,7 @@ export default function UsesPage() {
   return (
     <main>
       <Header />
-      
+
       <div>
         <div className="container mx-auto">
           <div className="py-16 lg:py-20">
