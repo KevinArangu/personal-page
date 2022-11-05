@@ -7,9 +7,6 @@ export default function ContactPage() {
       <div>
         <div className="container mx-auto">
           <div className="py-16 lg:py-20">
-            <div>
-              <img src="/assets/img/icon-contact.png" alt="icon envelope" />
-            </div>
             <h1 className="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
               Contact
             </h1>
