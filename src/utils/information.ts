@@ -297,5 +297,5 @@ export const USES = [
   "Postman",
   "Insomnia",
   "@types",
-  "Nodemon"
+  "Nodemon",
 ].sort(() => Math.random() - 0.5);
