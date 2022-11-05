@@ -16,7 +16,7 @@ export default function UsesPage() {
                 {USES.map((use) => (
                   <li
                     key={use}
-                    className="bg-secondary font-medium py-1 px-3 corners font-body text-lg shadow-sm text-primary dark:text-white"
+                    className="truncate bg-secondary font-medium py-1 px-3 corners font-body text-lg shadow-sm text-primary dark:text-white"
                   >
                     {use}
                   </li>
